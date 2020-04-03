@@ -79,8 +79,9 @@ namespace DonetArxLearn
         [CommandMethod("xt")]
         public void Test()
         {
-            int a = 0;
-            _geomUtil.CreateEmployee("xu.shuai", "development", 10000, new Point3d(10, 10, 0));
+            Application.SetSystemVariable("IMAGEFRAME", Convert.ToInt16(1));
+            var editor = Application.DocumentManager.MdiActiveDocument.Editor;
+            editor.WriteMessage("done!");
         }
 
         [CommandMethod("xsCreate")]

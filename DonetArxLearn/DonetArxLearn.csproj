@@ -50,55 +50,55 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AcCoreMgd">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\AcCoreMgd.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\AcCoreMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcCui">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\AcCui.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\AcCui.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcDbMgd">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\AcDbMgd.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\AcDbMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acdbmgdbrep">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\acdbmgdbrep.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\acdbmgdbrep.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcDx">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\AcDx.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\AcDx.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcMgd">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\AcMgd.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\AcMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcMr">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\AcMr.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\AcMr.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcSeamless">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\AcSeamless.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\AcSeamless.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcTcMgd">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\AcTcMgd.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\AcTcMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcWindows">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\AcWindows.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\AcWindows.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AdUIMgd">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\AdUIMgd.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\AdUIMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AdUiPalettes">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\AdUiPalettes.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\AdUiPalettes.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AdWindows">
-      <HintPath>..\..\..\..\ArxLib\Arx2020x64\inc\AdWindows.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX2020\inc\AdWindows.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PresentationCore" />
