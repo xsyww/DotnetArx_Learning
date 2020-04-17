@@ -10,13 +10,12 @@ using System.Security.Authentication.ExtendedProtection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DonetArxLearn
+namespace DonetArxLearn.EmployeeSample
 {
-    class GeomUtil
+    class EmployeeGeomUtil
     {
         private string _acmeDictName = "ACME_DIVISION";
         private string _xrecName = "Department Manager";
-
 
         public ObjectId CreateCircle(Point3d centerPoint, Transaction trans, BlockTableRecord btr, ObjectId layerId)
         {

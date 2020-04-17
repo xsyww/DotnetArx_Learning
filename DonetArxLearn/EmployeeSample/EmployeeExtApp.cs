@@ -9,9 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DonetArxLearn
+namespace DonetArxLearn.EmployeeSample
 {
-    public class ExtApp : IExtensionApplication
+    public class EmployeeExtApp : IExtensionApplication
     {
         #region 成员
 
@@ -27,14 +27,14 @@ namespace DonetArxLearn
 
         public void Initialize()
         {
-            Application.DocumentManager.MdiActiveDocument?.Editor.WriteMessage("xs app loaded!");
+            Autodesk.AutoCAD.ApplicationServices.Core.Application.DocumentManager.MdiActiveDocument?.Editor.WriteMessage("xs app loaded!");
             AddContextMenu();
-            CreatePalette();
+            //CreatePalette();
         }
 
         public void Terminate()
         {
-            Application.DocumentManager.MdiActiveDocument?.Editor.WriteMessage("xs app unload!");
+            Autodesk.AutoCAD.ApplicationServices.Core.Application.DocumentManager.MdiActiveDocument?.Editor.WriteMessage("xs app unload!");
             RemoveContextMenu();
         }
 
@@ -77,9 +77,9 @@ namespace DonetArxLearn
 
         private void Mi_Click(object sender, EventArgs e)
         {
-            using (Application.DocumentManager.MdiActiveDocument.LockDocument())
+            using (Autodesk.AutoCAD.ApplicationServices.Core.Application.DocumentManager.MdiActiveDocument.LockDocument())
             {
-                new CommandEntry().CreateEmployee();
+                new EmployeeCommand().CreateEmployee();
             }
         }
 

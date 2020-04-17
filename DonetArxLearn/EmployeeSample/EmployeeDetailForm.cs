@@ -1,5 +1,6 @@
 ﻿using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.EditorInput;
+using Autodesk.AutoCAD.Windows.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DonetArxLearn
+namespace DonetArxLearn.EmployeeSample
 {
     public partial class EmployeeDetailForm : Form
     {
@@ -32,7 +33,7 @@ namespace DonetArxLearn
                 {
                     if (trans.GetObject(res.ObjectId, OpenMode.ForRead) is BlockReference br)
                     {
-                        var empInfo = new GeomUtil().GetEmployeeInfo(br, trans);
+                        var empInfo = new EmployeeGeomUtil().GetEmployeeInfo(br, trans);
                         if (empInfo == null)
                             return;
 
@@ -42,7 +43,6 @@ namespace DonetArxLearn
                     }
                 }
             }
-
         }
     }
 }

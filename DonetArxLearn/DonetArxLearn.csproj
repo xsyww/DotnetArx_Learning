@@ -50,55 +50,55 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AcCoreMgd">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\AcCoreMgd.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\AcCoreMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcCui">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\AcCui.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\AcCui.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcDbMgd">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\AcDbMgd.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\AcDbMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acdbmgdbrep">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\acdbmgdbrep.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\acdbmgdbrep.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcDx">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\AcDx.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\AcDx.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcMgd">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\AcMgd.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\AcMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcMr">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\AcMr.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\AcMr.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcSeamless">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\AcSeamless.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\AcSeamless.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcTcMgd">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\AcTcMgd.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\AcTcMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcWindows">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\AcWindows.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\AcWindows.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AdUIMgd">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\AdUIMgd.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\AdUIMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AdUiPalettes">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\AdUiPalettes.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\AdUiPalettes.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AdWindows">
-      <HintPath>..\..\..\..\ObjectARX2020\inc\AdWindows.dll</HintPath>
+      <HintPath>..\..\..\Arx\ObjectARX2020\inc\AdWindows.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PresentationCore" />
@@ -115,32 +115,40 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationFunc.cs" />
     <Compile Include="CommandEntry.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="EmployeeDetailCtrl.cs">
+    <Compile Include="CommonUtil.cs" />
+    <Compile Include="EmployeeSample\Employee.cs" />
+    <Compile Include="EmployeeSample\EmployeeCommand.cs" />
+    <Compile Include="EmployeeSample\EmployeeDetailCtrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EmployeeDetailCtrl.Designer.cs">
+    <Compile Include="EmployeeSample\EmployeeDetailCtrl.Designer.cs">
       <DependentUpon>EmployeeDetailCtrl.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeDetailForm.cs">
+    <Compile Include="EmployeeSample\EmployeeDetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeDetailForm.Designer.cs">
+    <Compile Include="EmployeeSample\EmployeeDetailForm.Designer.cs">
       <DependentUpon>EmployeeDetailForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExtApp.cs" />
-    <Compile Include="GeomUtil.cs" />
-    <Compile Include="MyDropTarget.cs" />
+    <Compile Include="EmployeeSample\EmployeeExtApp.cs" />
+    <Compile Include="EmployeeSample\EmployeeGeomUtil.cs" />
+    <Compile Include="GetStartWithVisualStudio\PerDocumentData.cs" />
+    <Compile Include="LayoutsAndPlot\LayoutPlotFunc.cs" />
+    <Compile Include="EmployeeSample\MyDropTarget.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EmployeeDetailCtrl.resx">
+    <EmbeddedResource Include="EmployeeSample\EmployeeDetailCtrl.resx">
       <DependentUpon>EmployeeDetailCtrl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeDetailForm.resx">
+    <EmbeddedResource Include="EmployeeSample\EmployeeDetailForm.resx">
       <DependentUpon>EmployeeDetailForm.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

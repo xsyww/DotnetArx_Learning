@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AAA = Autodesk.AutoCAD.ApplicationServices;
 
-namespace DonetArxLearn
+namespace DonetArxLearn.EmployeeSample
 {
     public partial class EmployeeDetailCtrl : UserControl
     {

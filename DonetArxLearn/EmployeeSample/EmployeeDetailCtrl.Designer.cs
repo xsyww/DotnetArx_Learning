@@ -1,4 +1,4 @@
-﻿namespace DonetArxLearn
+﻿namespace DonetArxLearn.EmployeeSample
 {
     partial class EmployeeDetailCtrl
     {
